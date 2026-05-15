@@ -1,8 +1,3 @@
-import FounderSection from "@/components/FounderSection"
-import HowItWorksSection from "@/components/HowItWorksSection"
-import ResultsSection from "@/components/ResultsSection"
-import FAQSection from "@/components/FAQSection"
-import GuaranteeSection, { WhatsAppButton } from "@/components/GuaranteeAndWhatsApp"
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
