@@ -68,7 +68,7 @@ export default function FAQSection() {
               <div key={i} className="bg-zinc-950 hover:bg-zinc-900 transition-colors">
                 <button
                   className="w-full text-left px-7 py-6 flex items-start justify-between gap-4 group"
-                  onClick={() => setOpen(isOpen ? null : i)}
+                  onClick={() => setOpen(isOpen ? SetStateAction<null> : i)}
                   aria-expanded={isOpen}
                 >
                   <span className="text-sm font-medium text-white leading-snug group-hover:text-lime-400 transition-colors">
