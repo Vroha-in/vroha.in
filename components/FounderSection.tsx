@@ -41,7 +41,7 @@ export default function FounderSection() {
                 }}
               />
               {/* Avatar circle */}
-              <div className="w-56 h-56 rounded-full bg-gradient-to-br from-lime-400 to-emerald-400 flex items-center justify-center relative">
+              <div className="w-56 h-56 rounded-full bg-linear-to-br from-lime-400 to-emerald-400 flex items-center justify-center relative">
                 <div className="absolute inset-[3px] rounded-full bg-black flex items-center justify-center">
                   <span className="text-6xl font-light text-lime-400 select-none">SA</span>
                 </div>
