@@ -11,7 +11,7 @@ import {FounderSection} from "@/components/FounderSection";
 import {HowItWorksSection} from "@/components/HowItWorksSection";
 import {ResultsSection} from "@/components/ResultsSection";
 import {FAQSection} from "@/components/FAQSection";
-import {GuaranteeSection}, { WhatsAppButton } from "@/components/GuaranteeAndWhatsApp";
+import GuaranteeSection, { WhatsAppButton } from "@/components/GuaranteeAndWhatsApp";
 export default function Home() {
   return (
     <main className="min-h-screen">
