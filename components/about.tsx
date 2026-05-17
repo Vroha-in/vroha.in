@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { Linkedin, Users, Award, Globe } from "lucide-react";
 
 const stats = [
-  { value: "8+", label: "Years experience", icon: Award },
-  { value: "500+", label: "Candidates helped", icon: Users },
+  { value: "4+", label: "Years experience", icon: Award },
+  { value: "200+", label: "Candidates helped", icon: Users },
   { value: "10K+", label: "LinkedIn network", icon: Linkedin },
-  { value: "15+", label: "Countries served", icon: Globe },
+  { value: "10+", label: "Countries served", icon: Globe },
 ];
 
 export function About() {
