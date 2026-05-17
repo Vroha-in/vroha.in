@@ -7,11 +7,11 @@ import { Testimonials } from "@/components/testimonials";
 import { Pricing } from "@/components/pricing";
 import { EnrollmentForm } from "@/components/enrollment-form";
 import { Footer } from "@/components/footer";
-import FounderSection from "@/components/FounderSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
-import ResultsSection from "@/components/ResultsSection";
-import FAQSection from "@/components/FAQSection";
-import GuaranteeSection, { WhatsAppButton } from "@/components/GuaranteeAndWhatsApp";
+import { Founder } from "@/components/FounderSection";
+import { HowItWorks } from "@/components/HowItWorksSection";
+import { Results } from "@/components/ResultsSection";
+import { FAQ } from "@/components/FAQSection";
+import Guarantee, { WhatsAppButton } from "@/components/GuaranteeAndWhatsApp";
 
 export default function Home() {
   return (
@@ -19,16 +19,16 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <FounderSection />
+      <Founder />
       <Services />
-      <HowItWorksSection />
+      <HowItWorks />
       <AgencyMarquee />
-      <ResultsSection />
+      <Results />
       <Testimonials />
       <Pricing />
-      <GuaranteeSection />
+      <Guarantee />
       <EnrollmentForm />
-      <FAQSection />
+      <FAQ />
       <Footer />
       <WhatsAppButton />
     </main>
