@@ -20,7 +20,6 @@ export default function Home() {
       <Pricing />
       <EnrollmentForm />
       <Footer />
-      <WhatsAppButton />
     </main>
   );
 }
