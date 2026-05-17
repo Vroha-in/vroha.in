@@ -1,141 +1,94 @@
-// ─────────────────────────────────────────────────────────────
-// HowItWorksSection.jsx
-// HOW TO ADD: Import and place AFTER your <Services> section:
-//   import HowItWorksSection from "@/components/HowItWorksSection"
-//   <HowItWorksSection />
-// ─────────────────────────────────────────────────────────────
+"use client";
 
 const steps = [
   {
-    num: "01",
+    number: "01",
+    title: "Choose your service & fill the form",
+    description:
+      "Select the service you need — LinkedIn, Resume, Marketing, or Portfolio. Fill in the short form on our site with your details and career goals. Takes less than 2 minutes.",
     icon: "📋",
-    title: "Submit & onboard",
-    desc: "Select your services and complete our intake form. You'll receive a detailed questionnaire within 2 hours to share your career story, goals, and target roles.",
-    time: "Within 2 hours",
-    tag: "Check your inbox",
   },
   {
-    num: "02",
+    number: "02",
+    title: "We review & get to work",
+    description:
+      "Syed personally reviews your profile and existing resume. No outsourcing, no junior staff. You may receive a quick WhatsApp message if we need any extra details from you.",
     icon: "🔍",
-    title: "Deep-dive review",
-    desc: "Syed personally reviews your existing profile and materials. We research your target roles, identify keyword gaps, and map your experience to what recruiters actually search for.",
-    time: "Day 1–2",
-    tag: "Role-specific research",
   },
   {
-    num: "03",
-    icon: "✍️",
-    title: "Draft & refine",
-    desc: "Your optimised LinkedIn, ATS-ready resume, or portfolio is delivered. You review, share feedback, and we revise until every word earns its place.",
-    time: "Day 3–5",
-    tag: "Revisions included",
+    number: "03",
+    title: "Receive your optimized profile",
+    description:
+      "Your fully optimized LinkedIn profile, resume, or portfolio is delivered within 3–5 business days. You get a revision round to make sure everything is exactly right.",
+    icon: "✅",
   },
   {
-    num: "04",
+    number: "04",
+    title: "Get visible. Get hired.",
+    description:
+      "Your profile is now recruiter-ready. We also market your profile directly to top recruitment agencies so you start getting noticed immediately.",
     icon: "🚀",
-    title: "Launch & get noticed",
-    desc: "Your profile goes live. If you've chosen Marketing, we immediately promote your profile to our network of top recruiters across 15+ countries.",
-    time: "Day 5–7",
-    tag: "10K+ recruiter network",
   },
-]
-
-const timeline = [
-  {
-    step: "Same day",
-    title: "Welcome email + intake questionnaire",
-    desc: "You'll receive a detailed questionnaire covering your career history, goals, target companies, and preferred tone. The more you share, the stronger we make your profile.",
-    tag: "📧 Check your inbox within 2 hours",
-  },
-  {
-    step: "Day 1–2",
-    title: "Personal strategy review by Syed",
-    desc: "Syed reviews everything and builds a positioning strategy tailored to your industry, seniority, and target market — India, US, UK, UAE, or wherever you're aiming.",
-    tag: "🎯 Role-specific keyword research included",
-  },
-  {
-    step: "Day 3–5",
-    title: "First draft delivered",
-    desc: "Your new LinkedIn profile, resume, or portfolio lands in your inbox. Review and send back any changes — we revise until you're completely satisfied.",
-    tag: "🔄 Revisions included per your plan",
-  },
-  {
-    step: "Day 5–7",
-    title: "Go live & start getting noticed",
-    desc: "Your profile is live and optimised. With the Marketing add-on, Syed immediately starts promoting you to our recruiter network. Messages typically begin within 1–2 weeks.",
-    tag: "📣 Promoted to 10K+ recruiter network",
-  },
-]
+];
 
 export default function HowItWorksSection() {
   return (
-    <section id="how-it-works" className="bg-black border-t border-white/10 py-24 px-6">
+    <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-5xl mx-auto">
 
-        <p className="text-xs font-semibold tracking-widest uppercase text-lime-400 mb-4">
+        {/* Label */}
+        <p className="text-xs font-semibold tracking-widest uppercase text-amber-600 mb-3 text-center">
           The process
         </p>
-        <h2 className="text-4xl md:text-5xl font-light text-white mb-4 leading-tight">
-          From signup to <span className="italic text-white/60">placed</span> —<br />
-          here's exactly what happens
+
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-4 leading-snug">
+          How Vroha works
         </h2>
-        <p className="text-white/50 text-sm max-w-xl mb-16">
-          No guesswork. No radio silence. You know what's happening at every step.
+        <p className="text-center text-gray-500 text-base mb-16 max-w-xl mx-auto">
+          From sign-up to job-ready in as little as 5 business days. Here is exactly what happens after you get started.
         </p>
 
-        {/* 4-step grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-px bg-white/10 rounded-2xl overflow-hidden mb-20">
-          {steps.map(({ num, icon, title, desc, time, tag }) => (
+        {/* Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {steps.map((step, index) => (
             <div
-              key={num}
-              className="bg-zinc-950 p-8 hover:bg-zinc-900 transition-colors group"
+              key={index}
+              className="bg-white border border-gray-100 rounded-2xl p-7 shadow-sm flex gap-5 items-start"
             >
-              <div className="text-5xl font-light text-lime-400/10 group-hover:text-lime-400/20 transition-colors mb-5 leading-none">
-                {num}
+              {/* Number circle */}
+              <div className="flex-shrink-0 w-12 h-12 rounded-full bg-amber-50 border border-amber-200 flex items-center justify-center">
+                <span className="text-amber-700 font-bold text-sm">{step.number}</span>
               </div>
-              <div className="w-10 h-10 rounded-xl bg-lime-400/10 border border-lime-400/20 flex items-center justify-center text-lg mb-4">
-                {icon}
+
+              <div>
+                <div className="text-2xl mb-2">{step.icon}</div>
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {step.description}
+                </p>
               </div>
-              <h3 className="text-sm font-semibold text-white mb-2">{title}</h3>
-              <p className="text-xs text-white/50 leading-relaxed mb-4">{desc}</p>
-              <p className="text-xs font-semibold text-lime-400 uppercase tracking-wide">
-                ⏱ {time}
-              </p>
             </div>
           ))}
         </div>
 
-        {/* Timeline */}
-        <p className="text-xs font-semibold tracking-widest uppercase text-white/30 mb-10">
-          What happens after you pay
-        </p>
-        <div className="relative">
-          {/* Vertical line */}
-          <div className="absolute left-[18px] top-0 bottom-0 w-px bg-white/10" />
-
-          <div className="space-y-10">
-            {timeline.map(({ step, title, desc, tag }, i) => (
-              <div key={i} className="flex gap-8 pl-12 relative">
-                {/* Dot */}
-                <div className="absolute left-0 top-1 w-[38px] h-[38px] rounded-full bg-black border-2 border-lime-400 flex items-center justify-center text-lime-400 text-xs font-bold">
-                  {i + 1}
-                </div>
-                <div>
-                  <p className="text-xs text-lime-400 font-semibold uppercase tracking-wide mb-1">
-                    {step}
-                  </p>
-                  <h4 className="text-sm font-semibold text-white mb-1">{title}</h4>
-                  <p className="text-xs text-white/50 leading-relaxed mb-2">{desc}</p>
-                  <span className="inline-block text-xs text-white/40 bg-white/5 px-3 py-1 rounded">
-                    {tag}
-                  </span>
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* Bottom note */}
+        <div className="mt-12 text-center">
+          <p className="text-gray-400 text-sm">
+            Questions before getting started?{" "}
+            <a
+              href="https://wa.me/917007510168"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-600 font-medium hover:underline"
+            >
+              Chat with us on WhatsApp →
+            </a>
+          </p>
         </div>
 
       </div>
     </section>
-  )
+  );
 }
