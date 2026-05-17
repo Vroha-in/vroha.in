@@ -7,7 +7,7 @@ import { Testimonials } from "@/components/testimonials";
 import { Pricing } from "@/components/pricing";
 import { EnrollmentForm } from "@/components/enrollment-form";
 import { Footer } from "@/components/footer";
-import FounderSection from "./components/FounderSection";
+import FounderSection from "@/components/FounderSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import ResultsSection from "@/components/ResultsSection";
 import FAQSection from "@/components/FAQSection";
