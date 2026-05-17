@@ -1,10 +1,10 @@
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
-import { Founder } from "@/components/Founder";
-import { HowItWorks } from "@/components/HowItWorks";
-import { Results } from "@/components/Results";
-import { FAQ } from "@/components/FAQ";
+import { Founder } from "@/components/FounderSection";
+import { HowItWorks } from "@/components/HowItWorksSection";
+import { Results } from "@/components/ResultsSection";
+import { FAQ } from "@/components/FAQSection";
 import { Services } from "@/components/services";
 import { AgencyMarquee } from "@/components/agency-marquee";
 import { Testimonials } from "@/components/testimonials";
@@ -18,10 +18,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
-      <Founder />
-      <HowItWorks />
-      <Results />
-      <FAQ />
+      <
       <Services />
       <AgencyMarquee />
       <Testimonials />
