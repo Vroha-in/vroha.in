@@ -73,7 +73,7 @@ export function Footer() {
               Testimonials
             </Link>
             <a
-              href="mailto:vrohainc@outlook.com"
+              href="mailto:admin@vroha.in"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
               Contact
