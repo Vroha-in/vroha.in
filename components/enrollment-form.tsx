@@ -31,7 +31,7 @@ type Country =
 const WISE_PAYMENT_HANDLE = "https://wise.com/pay/me/syedamirhusain";
 
 /** Admin inbox that receives every new enquiry. */
-const ADMIN_EMAIL = "vrohainc@outlook.com";
+const ADMIN_EMAIL = "admin@vroha.in";
 
 const currencyConfig: Record<
   Country,
